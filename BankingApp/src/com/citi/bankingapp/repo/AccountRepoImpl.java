@@ -2,7 +2,9 @@ package com.citi.bankingapp.repo;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.citi.bankingapp.dto.Account;
@@ -90,14 +92,76 @@ public class AccountRepoImpl implements AccountRepo {
 
 	@Override
 	public Account getAccountDetailsById(String accountId) {
-		// TODO Auto-generated method stub
+		Connection connection  = dbUtils.getConnection();
+		
+		
+		ResultSet resultSet = null;
+		String query = "select * from account where accountId=?";// insert query .
+		// place holder ==> we will provide the value. &abc 
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, accountId);
+			
+			// o max N 
+			resultSet = preparedStatement.executeQuery();
+			if (resultSet.next()) {
+				// do we need to collect the whole info. ===> row ===> we can retrieve it on the basis of column
+				Account  account = new Account();
+				account.setAccountNumber(resultSet.getString("accountId"));
+				account.setAccountStatus(resultSet.getString("accountStatus"));
+				account.setAccountType(resultSet.getString("accountType"));
+				account.setBalance(resultSet.getFloat("balance"));
+				account.setCustomerId(resultSet.getString("customerId"));
+				account.setHolderName(resultSet.getString("holderName"));
+				
+				return account;
+				
+				
+			}
+			
+		
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return null;
 	}
 
 	@Override
 	public List<Account> getAllAccounts() {
-		// TODO Auto-generated method stub
-		return null;
+		Connection connection  = dbUtils.getConnection();
+		List<Account> accountList = new ArrayList<>();
+		
+		ResultSet resultSet = null;
+		String query = "select * from account";// insert query .
+		// place holder ==> we will provide the value. &abc 
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			
+			// o max N 
+			resultSet = preparedStatement.executeQuery();
+			while (resultSet.next()) {
+				// do we need to collect the whole info. ===> row ===> we can retrieve it on the basis of column
+				Account  account = new Account();
+				account.setAccountNumber(resultSet.getString("accountId"));
+				account.setAccountStatus(resultSet.getString("accountStatus"));
+				account.setAccountType(resultSet.getString("accountType"));
+				account.setBalance(resultSet.getFloat("balance"));
+				account.setCustomerId(resultSet.getString("customerId"));
+				account.setHolderName(resultSet.getString("holderName"));
+				
+				accountList.add(account);
+				
+			}
+			
+		
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return accountList;
 	}
 
 }

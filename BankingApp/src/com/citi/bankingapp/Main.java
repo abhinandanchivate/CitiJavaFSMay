@@ -1,5 +1,7 @@
 package com.citi.bankingapp;
 
+import java.util.List;
+
 import com.citi.bankingapp.dto.Account;
 import com.citi.bankingapp.service.AccountService;
 import com.citi.bankingapp.service.AccountServiceImpl;
@@ -12,13 +14,16 @@ public class Main {
 		AccountService accountService = AccountServiceImpl.getInstance();
 		
 		
-//		String result = accountService.createAccount(new Account("002","active","abhinandan chivate",1000.0f,"AC001"));
+//		String result = accountService.createAccount(new Account("005","active","abhinandan chivate",1000.0f,"AC001"));
 //		
 //		System.out.println("result "+result);
+//		
 		
-		String result = accountService.deleteAccount("001");
 		
-		System.out.println(result);
+		List<Account> accounts = accountService.getAllAccounts();
+		
+		
+		accounts.forEach(e->System.out.println(e));
 		
 		
 		

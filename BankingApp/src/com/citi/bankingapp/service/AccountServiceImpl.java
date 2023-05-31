@@ -41,7 +41,7 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public List<Account> getAllAccounts() {
 		// TODO Auto-generated method stub
-		return null;
+		return accountRepo.getAllAccounts();
 	}
 
 }
