@@ -10,6 +10,19 @@ public class BankCustomer extends BankDetails implements CreditCard {
 		
 		Scanner scanner = new Scanner(System.in);// in --> input stream 
 		//-> to accept the data from the console
+		System.out.println("enter the ac holder name");
+		String accHolderName = scanner.next();
+		
+		setAccHolderName(accHolderName);
+		
+		System.out.println("enter the acc number");
+		long  accNumber= scanner.nextLong();
+		setAccNumber(accNumber);
+		
+		
+		System.out.println("enter the bank name");
+		String bankName = scanner.next();
+		setBankName(bankName);
 		
 
 		// 
@@ -19,7 +32,11 @@ public class BankCustomer extends BankDetails implements CreditCard {
 	public String getCreditCard() {
 		// all bank details 
 		// TODO Auto-generated method stub
-		return null;
+		String accHolderName = getAccHolderName();
+		String bankName = getBankName();
+		long accNumber = getAccNumber();
+		
+		return accHolderName+ bankName + accNumber;
 	}
 
 }
