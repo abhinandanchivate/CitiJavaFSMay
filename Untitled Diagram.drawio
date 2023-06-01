@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-31T07:54:29.472Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15" etag="L2ut16UV4hnLQfd1m77-" version="21.3.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-06-01T08:46:01.588Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15" etag="QWmMdtoQadSRFerzVuYN" version="21.3.6" type="github" pages="2">
   <diagram name="Page-1" id="OzqNdbhDN5wW7r0jXmfs">
-    <mxGraphModel dx="954" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="794" dy="501" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -47,18 +47,81 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Iq71Dou2pirvSZXmQ_F6" name="Page-2">
-    <mxGraphModel dx="1781" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1621" dy="501" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="dxOAOTCP8sG_lDlKhjUy-1" value="Design Pattern :(26 Design patterns ) .&amp;nbsp;&lt;br&gt;1. Creational(Singleton DP , Builder DP, Factory DP. Abstract Factory DP.)&lt;br&gt;2. Structural&lt;br&gt;3. Behavioural" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+        <mxCell id="dxOAOTCP8sG_lDlKhjUy-1" value="Design Pattern :(26 Design patterns ) .&amp;nbsp;&lt;br&gt;1. Creational(Singleton DP , Builder DP, Factory DP. Abstract Factory DP.)&lt;br&gt;2. Structural&lt;br&gt;3. Behavioural" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" parent="1" vertex="1">
           <mxGeometry x="-30" y="100" width="610" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="dxOAOTCP8sG_lDlKhjUy-2" value="Builder DP : when we are coming across with the complex object creation , we will build the object step by step.&lt;br&gt;&lt;br&gt;when to prefer :&amp;nbsp;&lt;br&gt;1. it provides clear separation between the construction and representation of the object.&lt;br&gt;2. control on construction side.&lt;br&gt;3. supports to make any changes into representational part of the object.&lt;br&gt;&lt;br&gt;steps to implement the Builder :&amp;nbsp;&lt;br&gt;&lt;br&gt;1. need the static inner class whose name should be XXXBuilder : here XXX : name of the class whose builder needs to be created.&lt;br&gt;2. builder class should have a public constructor with all required attributes as a parameters..&lt;br&gt;3. other non priority attributes / optional attributes : we should have a setter method.&lt;br&gt;4. build method which will return the our reqd object via builder ." style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+        <mxCell id="dxOAOTCP8sG_lDlKhjUy-2" value="Builder DP : when we are coming across with the complex object creation , we will build the object step by step.&lt;br&gt;&lt;br&gt;when to prefer :&amp;nbsp;&lt;br&gt;1. it provides clear separation between the construction and representation of the object.&lt;br&gt;2. control on construction side.&lt;br&gt;3. supports to make any changes into representational part of the object.&lt;br&gt;&lt;br&gt;steps to implement the Builder :&amp;nbsp;&lt;br&gt;&lt;br&gt;1. need the static inner class whose name should be XXXBuilder : here XXX : name of the class whose builder needs to be created.&lt;br&gt;2. builder class should have a public constructor with all required attributes as a parameters..&lt;br&gt;3. other non priority attributes / optional attributes : we should have a setter method.&lt;br&gt;4. build method which will return the our reqd object via builder ." style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" parent="1" vertex="1">
           <mxGeometry x="-30" y="420" width="710" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="dxOAOTCP8sG_lDlKhjUy-3" value="Factory Design Pattern : &amp;nbsp;it allows sub classes to choose the type of objects to create.&lt;br&gt;it promotes the loose coupling.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+        <mxCell id="dxOAOTCP8sG_lDlKhjUy-3" value="Factory Design Pattern : &amp;nbsp;it allows sub classes to choose the type of objects to create.&lt;br&gt;it promotes the loose coupling.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" parent="1" vertex="1">
           <mxGeometry x="-20" y="1080" width="710" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-1" value="Behavior DP : 1. iterator(Collection : list/SET==&amp;gt; iterator method &amp;nbsp;, strategy DP : .&amp;nbsp;&lt;br&gt;3. Observer&lt;br&gt;4. Visitor." style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="1500" width="710" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-2" value="Chat" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="2170" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-4" value="Ice cream" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="2060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-5" value="Chinese" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="2060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-7" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="2180" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-8" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="2290" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-9" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="2290" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-10" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="394" y="2290" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-11" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="2180" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-12" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="2180" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-13" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="2180" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-14" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="2450" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-15" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="2380" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-16" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="2380" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-17" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="2170" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-18" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/order-128.png" vertex="1" parent="1">
+          <mxGeometry x="-60" y="2080" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cFb8-tJZ0Hh37qB5lgc5-19" target="cFb8-tJZ0Hh37qB5lgc5-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-19" value="HomeLoan :&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="2420" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-20" value="Multiple Applications&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="2480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cFb8-tJZ0Hh37qB5lgc5-22" value="into single file." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="2640" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
